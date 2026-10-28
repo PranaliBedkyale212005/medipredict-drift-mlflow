@@ -1,0 +1,5 @@
+                 scenario  n_current  drifted_features  share   alert_level                                             drifted_list  max_psi  pred_mean_ref  pred_mean_cur  pred_ks_p   auc  accuracy  recall    f1
+         control_no_shift        150                 0  0.000          NONE                                                             0.203          0.434          0.476      0.088 0.862     0.800   0.923 0.762
+population_shift_moderate        150                 5  0.625 DATASET_DRIFT                Glucose, BloodPressure, Insulin, BMI, Age    0.347          0.434          0.611      0.000 0.710     0.660   0.885 0.730
+  population_shift_severe        150                 6  0.750 DATASET_DRIFT Glucose, BloodPressure, SkinThickness, Insulin, BMI, Age    0.724          0.434          0.670      0.000 0.718     0.660   0.940 0.756
+      glucose_unit_change        150                 1  0.125 FEATURE_ALERT                                                  Glucose    8.290          0.434          0.275      0.000 0.808     0.713   0.149 0.246
